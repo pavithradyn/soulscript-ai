@@ -1,0 +1,130 @@
+/* App.css - Clean & Fresh Version */
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 800px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* SoulScript AI Title - Purple Gradient */
+/* App.css update */
+
+h1 {
+  display: block; /* Idhu title-a thalaivana maadhiri thaniya nikka vaikkum */
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #bb86fc, #9965f4, #d0bdf4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px; /* Indha gap dhaan paragraph-a killa thallum */
+  line-height: 1.2;
+}
+
+p {
+  display: block;
+  color: #b0b0b0;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 40px; /* Input box-ku munnadi gap vidum */
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+textarea {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #333;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+/* Mic Button */
+.mic-btn {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.mic-btn.listening {
+  background: #432786;
+  border-color: #351b4e;
+  box-shadow: 0 0 15px rgba(17, 17, 16, 0.6);
+  animation: pulse 1.5s infinite;
+}
+
+/* Main Transform Button */
+.generate-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(142, 45, 226, 0.3);
+  transition: transform 0.2s;
+}
+
+.generate-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.generate-btn:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+/* Result Area */
+.result-box {
+  background: #1e1e1e;
+  border-left: 5px solid #8e2de2;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 12px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+h3 { 
+  color: #bb86fc; 
+  margin-top: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
